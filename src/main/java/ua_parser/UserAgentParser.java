@@ -114,7 +114,7 @@ public class UserAgentParser {
           v3 = matcher.group(4);
         }
       }
-      return family == null ? null : new UserAgent(family, v1, v2, v3);
+      return family == null ? null : new UserAgent(family.trim(), v1, v2, v3);
     }
   }
 }
